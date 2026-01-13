@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartChoice | Professional Mobile Guru</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="top-nav">
+    <div class="logo">Smart<span>Choice</span></div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search mobiles to compare...">
+    </div>
+    <div class="user-actions">
+        <a href="login.html" class="login-btn">Login</a>
+    </div>
+</nav>
+
+<div class="dashboard">
+    <aside class="sidebar">
+        <h3>Filters</h3>
+        <div class="filter-section">
+            <label>Price Range</label>
+            <select id="priceFilter">
+                <option value="all">All Budgets</option>
+                <option value="budget">Under ₹20,000</option>
+                <option value="mid">₹20,000 - ₹50,000</option>
+                <option value="premium">Above ₹50,000</option>
+            </select>
+        </div>
+        <div class="filter-section">
+            <label>Brand</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> Apple</label>
+                <label><input type="checkbox"> Samsung</label>
+                <label><input type="checkbox"> OnePlus</label>
+                <label><input type="checkbox"> Realme</label>
+                <label><input type="checkbox"> Xiaomi</label>
+<div class="priority-section">
+    <h3 class="section-label">Find by Priority</h3>
+    <div class="label-group">
+        <a href="index.php?filter=performance" class="pill-btn <?php echo (isset($_GET['filter']) && $_GET['filter'] == 'performance') ? 'active' : ''; ?>">
+            <span class="pill-icon">🚀</span>
+            <div class="pill-text">
+                <span class="pill-title">Performance</span>
+                <span class="pill-desc">High RAM & Speed</span>
+            </div>
+        </a>
+
+        <a href="index.php?filter=camera" class="pill-btn <?php echo (isset($_GET['filter']) && $_GET['filter'] == 'camera') ? 'active' : ''; ?>">
+            <span class="pill-icon">📸</span>
+            <div class="pill-text">
+                <span class="pill-title">Best Camera</span>
+                <span class="pill-desc">Top Photography</span>
+            </div>
+        </a>
+
+        <?php if(isset($_GET['filter'])): ?>
+            <a href="index.php" class="reset-link">Reset Filters</a>
+        <?php endif; ?>
+    </div>
+</div>
+            </div>
+        </div>
+    </aside>
+
+    <section class="content">
+        <div class="section-header">
+            <h2>Recommended for You</h2>
+            <p>Based on our Value-for-Money Algorithm</p>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+            <div class="phone-card">
+                <span class="value-tag">9.2 Score</span>
+                <img src="s24.jpeg" alt="Phone">
+                <h4>Galaxy S24 </h4>
+                <p class="price">₹79,999</p>
+                <div class="specs">
+                    <span>12GB RAM</span> | <span>256GB</span>
+                </div>
+                <a href="compare.html" class="compare-btn">Compare</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

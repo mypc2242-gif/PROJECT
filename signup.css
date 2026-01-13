@@ -1,0 +1,118 @@
+:root {
+    --primary: #3033ce;
+    --dark: #1e293b;
+    --light-bg: #f8fafc;
+    --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+body { background-color: var(--light-bg); }
+.logo { font-size: 1.5rem; font-weight: 700; color: var(--dark); }
+.logo span { color: var(--primary); }
+.content { flex: 1; }
+.section-header { margin-bottom: 2rem; }
+/* SIGN UP Page Styles */
+.auth-page {
+    background: linear-gradient(135deg, #070707 0%, #e2e8f0 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*SIZE OF BLOCK*/
+.auth-container { width: 100%; max-width: 450px; padding: 20px; }
+.auth-card {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.auth-header { text-align: center; margin-bottom: 30px; }
+.auth-header h1 { font-size: 28px; font-weight: 700; margin-top: 15px; }
+.form-group { margin-bottom: 20px; text-align: left; }
+.form-group label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+/* RATIO OF SIGNUP PAGE*/
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.2s;
+}
+.auth-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.auth-btn:hover { background: #e8e9ec; }
+.auth-footer { text-align: center; margin-top: 25px; font-size: 14px; color: #64748b; }
+.auth-footer a { color: var(--primary); font-weight: 600; text-decoration: none; }
+
+/* Blurry Glass Background */
+.auth-page {
+    background: #000000; /* Dark background */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Colorful shapes that sit BEHIND the blur */
+.background-shape {
+    position: absolute;
+    width: 400px; height: 400px;
+    background: linear-gradient(#d3d5d8, #cfcfcf);
+    border-radius: 50%;
+    top: -100px; left: -100px;
+    z-index: 1;
+    filter: blur(50px);
+}
+
+.background-shape-2 {
+    position: absolute;
+    width: 300px; height: 300px;
+    background: #db2777;
+    border-radius: 50%;
+    bottom: -50px; right: -50px;
+    z-index: 1;
+    filter: blur(80px);
+}
+
+/* Change text to white to be visible on dark blur */
+.auth-card h1, .auth-card p, .auth-card label, .auth-footer {
+    color: rgb(0, 0, 0) !important;
+}
+/*INSIDE A CARD*/
+.auth-card input {
+    background: rgba(221, 38, 38, 0.1);
+    border: 1px solid rgba(76, 207, 15, 0.2);
+    color: rgb(0, 0, 0);
+}
+
+.auth-card input::placeholder {
+    color: rgba(198, 22, 221, 0.5);
+}
+/* Priority Labels Styling */
+.priority-section {
+    margin-bottom: 2.5rem;
+}
+

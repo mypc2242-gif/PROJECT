@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account | SmartChoice</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body class="auth-page">
+    <div class="background-shape"></div>
+    <div class="background-shape-2"></div>
+
+    <div class="auth-container">
+        <div class="auth-card glass">
+            <div class="auth-header">
+                <div class="logo">Smart<span>Choice</span></div>
+                <h1>Create Account</h1>
+                <p>Join us to find your perfect match</p>
+            </div>
+
+            <form action="register_process.php" method="POST" class="auth-form">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" name="username" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" placeholder="email@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Create a password" required>
+                </div>
+
+                <button type="submit" class="auth-btn">Sign Up</button>
+            </form>
+
+            <p class="auth-footer">
+                Already have an account? <a href="login.html">Login here</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
