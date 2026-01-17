@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Access | SmartChoice</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="auth-page admin-theme">
+    <div class="background-shape" style="background: linear-gradient(#1e293b, #334155);"></div>
+    <div class="background-shape-2" style="background: #1d4ed8;"></div>
+
+    <div class="auth-container">
+        <div class="auth-card glass">
+            <div class="auth-header">
+                <div class="logo">Smart<span>Admin</span></div>
+                <h1>Team Portal</h1>
+                <p>Authorized Personnel Only</p>
+            </div>
+
+            <form action="admin_process.php" method="POST" class="auth-form">
+                <div class="form-group">
+                    <label>Admin ID</label>
+                    <input type="text" name="admin_id" placeholder="Enter Team ID" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Secret Key</label>
+                    <input type="password" name="admin_pass" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="cool-submit-btn" style="width: 100%; justify-content: center;">
+                    Verify & Enter
+                </button>
+            </form>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="index.php" style="color: rgba(255,255,255,0.6); font-size: 13px; text-decoration: none;">← Back to Main Site</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
