@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmartChoice | Professional Mobile Guru</title>
-    <link rel="stylesheet" href="css/index1.css">
+    <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -13,7 +13,18 @@
     <div class="logo">Smart<span>Choice</span></div>
     
     <div class="search-bar">
-        <input type="text" placeholder="Search mobiles to compare...">
+    <form action="index.php" method="GET">
+        <input type="text" 
+               name="search" 
+               class="search-input" 
+               placeholder="Search mobiles (e.g. iPhone, 8GB RAM)..." 
+               <input type="text" name="search" placeholder="Search by name or brand (e.g. Samsung)..." value="">
+        
+        <button type="submit" class="cool-submit-btn">
+        </button>
+    </form>
+</div>
+</div>
     </div>
 
     <div class="user-actions">
@@ -66,7 +77,7 @@
             
             <div class="phone-card">
                 <span class="value-tag">9.5 Score</span>
-                <img src="images/iphone15.jpg" alt="iPhone 15">
+                <img src="iphone15.jpeg" alt="iPhone 15">
                 <h4>iPhone 15</h4>
                 <p class="price">₹79,900</p>
                 <div class="specs">
@@ -77,7 +88,7 @@
 
             <div class="phone-card">
                 <span class="value-tag">9.2 Score</span>
-                <img src="images/s24.jpg" alt="Galaxy S24">
+                <img src="s24.jpeg" alt="Galaxy S24">
                 <h4>Galaxy S24</h4>
                 <p class="price">₹74,999</p>
                 <div class="specs">
@@ -88,7 +99,7 @@
 
             <div class="phone-card">
                 <span class="value-tag">9.8 Score</span>
-                <img src="images/op12r.jpg" alt="OnePlus 12R">
+                <img src="oneplus12r.jpeg" alt="OnePlus 12R">
                 <h4>OnePlus 12R</h4>
                 <p class="price">₹39,999</p>
                 <div class="specs">
@@ -98,8 +109,12 @@
             </div>
 
         </div>
+        <footer style="margin-top: 50px; padding: 20px; text-align: center; border-top: 1px solid #e2e8f0;">
+    <p style="color: #64748b; font-size: 14px;">&copy; 2024 SmartChoice Guru</p>
+    <a href="admin page.html" style="color: #cbd5e1; text-decoration: none; font-size: 12px;">Staff Login</a>
+</footer>
     </section>
 </div>
-
 </body>
 </html>
+
